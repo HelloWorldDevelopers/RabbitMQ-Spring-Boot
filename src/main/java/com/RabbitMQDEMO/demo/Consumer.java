@@ -10,7 +10,7 @@ import java.io.IOException;
 
 @Service
 @EnableRabbit
-public class Consumer implements ChannelAwareMessageListener {
+public class Consumer  {
 
 //    @RabbitListener(queues = "aq")
 //    public void receiveMessage(String message) throws IOException {
@@ -19,9 +19,4 @@ public class Consumer implements ChannelAwareMessageListener {
 //
 //       
 //    }
-
-    @Override
-    public void onMessage(Message message, Channel channel) throws Exception {
-        // Implement logic here if necessary
-    }
 }
